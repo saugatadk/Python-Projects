@@ -14,4 +14,3 @@ while True:
         sum += num;
         print("Current sum:", sum);
 print("Final sum of positive numbers:", sum);
-        
