@@ -1,4 +1,11 @@
+try:
+#     numerator = int(input("Enter numerator: "))
+#     denominator = int(input("Enter denominator: "))
 
-sum = int(number1) + int(number2);
-print("sum of two numbers is:", sum);
-print("hello world");
+#     result = numerator/denominator
+
+#     print(result)
+# except:
+#     print("Denominator cannot be 0. Try again.")
+    
+    
