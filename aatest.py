@@ -1,18 +1,16 @@
 import numpy as np
 
+# take list input
+list1 = eval(input())
 
-# create a numpy array
-array1 = np.arange(1, 13)
+# create the given array
+arr = np.array(list1)
+                 
+# slice the first matrix
+print(arr[0, :, :])
 
-# get n as user input
-n = int(input())
+# slice the third column of the second matrix
+print(arr[1, :, 2])
 
-# get every nth element from array1
-every_nth_element = array1[::2]
-print(every_nth_element)
-
-# calculate the standard deviation of every nth element
-std_deviation = np.std(every_nth_element)
-
-# display the resulting value
-print(std_deviation)
+# slice the second row of each matrix
+print(arr[:, 1, :])
