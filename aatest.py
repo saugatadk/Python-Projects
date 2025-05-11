@@ -1,14 +1,18 @@
 import numpy as np
 
-# take user input
-array1 = np.array(list(map(int, input().split())))
+# create array A with numbers from 1 to 10 using arange()
+A = np.arange(1, 11)
 
-# find even numbers using condition
-even_arr1 = array1[array1 % 2 == 0]
+# create array B with numbers from 11 to 20 using arange()
+B = np.arange(11, 21)
 
-# find even numbers using where()
-even_arr2 = np.where((array1 % 2 == 0), array1, 0)
+# add A and B element-wise
+C = np.add(A, B)
 
-# print the results
-print(even_arr1)
-print(even_arr2)
+# square each element of C
+D = np.power(C, 2)
+# calculate the sum of all elements in D
+final_sum = np.sum(D)
+
+# print the final sum
+print(final_sum)
