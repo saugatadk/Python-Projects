@@ -1,2 +1,1 @@
-
-print(result)
+ each row i

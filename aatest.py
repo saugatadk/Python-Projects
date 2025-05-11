@@ -1,16 +1,14 @@
 import numpy as np
 
-# take list input
-list1 = eval(input())
+# take user input
+array1 = np.array(list(map(int, input().split())))
 
-# create the given array
-arr = np.array(list1)
-                 
-# slice the first matrix
-print(arr[0, :, :])
+# find even numbers using condition
+even_arr1 = array1[array1 % 2 == 0]
 
-# slice the third column of the second matrix
-print(arr[1, :, 2])
+# find even numbers using where()
+even_arr2 = np.where((array1 % 2 == 0), array1, 0)
 
-# slice the second row of each matrix
-print(arr[:, 1, :])
+# print the results
+print(even_arr1)
+print(even_arr2)
