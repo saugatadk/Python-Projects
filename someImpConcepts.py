@@ -13,6 +13,8 @@ print(numbers)
 double = lambda n: n*2
 print(double(10))    # 20
 
+loop = [1,4,8,12,27]
+print(list(filter(lambda n : n**2 > 100, loop))) #to filter numbers where the square is greater than 100:
 
 # Example of using *args
 # *args allows you to pass a variable number of non-keyword arguments to a function
